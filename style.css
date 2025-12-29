@@ -156,34 +156,83 @@ main {
 
 
 /* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
     header {
-        padding: 1rem 0.1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
     }
 
     nav {
         display: none;
     }
 
-    header h1 {
-        font-size: 2rem;
-    }
-
     .content {
-        margin-top: 25rem;
-        max-width: 30rem;
-        margin-left: 10%;
+        margin: 4rem auto 0;
+        padding: 0 1.2rem;
+        max-width: 100%;
+        text-align: center;
     }
 
     .tag-box {
-        width: 12rem;
+        width: auto;
+        padding: 0.5rem 1rem;
+        margin: 0 auto 1rem;
     }
 
     .content h1 {
-        font-size: 2.5rem;
+        font-size: 1.9rem;
+        line-height: 1.25;
     }
 
     .description {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .content {
+        margin: 6rem auto 0;
+        padding: 0 2rem;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .tag-box {
+        width: fit-content;
+        padding: 0.6rem 1.2rem;
+        margin: 0 auto 1.5rem;
+    }
+
+    .content h1 {
+        font-size: 2.6rem;
+    }
+
+    .description {
+        font-size: 1.05rem;
+        max-width: 42rem;
+        margin: 0 auto;
+    }
+}
 }
